@@ -8,16 +8,5 @@
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0",
     "bootstrap-sass": "^3.0.0"
-  },
-  "dependencies": {
-    "admin-lte": "^2.3.3",
-    "bootstrap": "^3.3.6",
-    "chosen": "0.0.2",
-    "ckeditor": "^4.5.9",
-    "datatables": "^1.10.12",
-    "datatables-bootstrap": "0.0.1",
-    "font-awesome": "^4.6.3",
-    "jquery-datetimepicker": "^2.5.4",
-    "sweetalert2": "^3.2.3"
   }
 }

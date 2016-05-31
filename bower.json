@@ -1,0 +1,29 @@
+{
+  "name": "laralte2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Kouceyla <hadjikouceyla@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "AdminLTE": "admin-lte#^2.3.3",
+    "bootstrap": "^3.3.6",
+    "chosen": "^1.5.1",
+    "ckeditor": "^4.5.9",
+    "datatables": "^1.10.12",
+    "datatables-bootstrap": "^1.0.0",
+    "font-awesome": "fontawesome#^4.6.3",
+    "datetimepicker": "^2.5.4",
+    "sweetalert2": "^3.2.3"
+  }
+}
