@@ -1,4 +1,9 @@
-<div class="copyright">
-    <p>الموقع الرسمي لملتقى الجمعيات الخيرية ولجان التنمية بمنطقة مكة المكرمة © 1436هـ/2015م</p>
-    <p>تطوير واستضافة - <a target="_blanck" href="http://www.your-new-it.com/">تقنيتك</a></p>
-</div>
+<!-- Main Footer -->
+<footer class="main-footer">
+<!-- To the right -->
+  <div class="pull-right hidden-xs">
+    Anything you want
+  </div>
+  <!-- Default to the left -->
+  <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+</footer>

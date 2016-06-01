@@ -29,7 +29,6 @@
                     <tr>
                         <th>Nom</th>
                         <th>Parent</th>
-                        <th>Langue</th>
                         <th class="actions">Actions</th>
                     </tr>
                 </thead>
@@ -38,7 +37,6 @@
                     <tr>
                         <th>Nom</th>
                         <th>Parent</th>
-                        <th>Langue</th>
                         <th class="actions">Actions</th>
                     </tr>
                 </tfoot>
@@ -52,7 +50,6 @@
 		                        	{{ $item->parent->name }}
 		                        @endif
 	                        </td>
-	                        <td>{{ $item->langue }}</td>
 	                        <td class="actions">
                                 <ul class="list-inline">
                                     <li><a href="{{ route(ADMIN . '.categories.edit', $item->id) }}" title="Modifier l'élément" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a></li>

@@ -12,9 +12,6 @@
 
         {!! Form::mySelect('parent_id', 'Categorie mére', ['' => ''] + App\Category::lists('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
 
-        {!! Form::mySelect('language_id', 'Langue', ['' => ''] + Config::get('variables.langues'), null, ['class'=>'form-control', 'required']) !!}
-       
-
       </div>
     </div>
 
