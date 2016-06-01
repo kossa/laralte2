@@ -12,6 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <link rel="stylesheet" href="{{ elixir('assets/css/admin.css', '/') }}">  
+  <link rel="stylesheet" href="{{ asset('/plugins/admin/custom.css') }}">  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -135,6 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- REQUIRED JS SCRIPTS -->
 
   <script src="{{ elixir('assets/js/admin.js', '/') }}"></script>
+  <script src="{{ asset('/plugins/admin/custom.js') }}"></script>
 
   @yield('add-js')
 

@@ -16,7 +16,7 @@ elixir(function(mix) {
 		'/datetimepicker/build/jquery.datetimepicker.min.css',
 		'/sweetalert2/dist/sweetalert2.min.css',
 		'/chosen/chosen.css',
-		'/datatables-bootstrap/1/dataTables.bootstrap.css',
+		'/datatables/media/css/dataTables.bootstrap.min.css',
 		'/AdminLTE/dist/css/AdminLTE.min.css',
 		'/AdminLTE/dist/css/skins/skin-blue.min.css'
 	], 'public/assets/css/admin.css');
@@ -26,9 +26,10 @@ elixir(function(mix) {
 		'jquery/dist/jquery.min.js',
 		'bootstrap/dist/js/bootstrap.min.js',
 		'datetimepicker/build/jquery.datetimepicker.full.min.js',
-		'ckeditor/ckeditor.js',
 		'datatables/media/js/jquery.dataTables.min.js',
 		'datatables/media/js/dataTables.bootstrap.js',
+		'sweetalert2/dist/sweetalert2.min.js',
+		'chosen/chosen.jquery.js',
 		'AdminLTE/dist/js/app.min.js',
 	], 'public/assets/js/admin.js');
 
@@ -36,6 +37,15 @@ elixir(function(mix) {
 	mix.copy(
 	   'public/plugins/font-awesome/fonts',
 	   'public/assets/fonts'
+    );
+	mix.copy(
+	   'public/plugins/bootstrap/dist/fonts',
+	   'public/assets/fonts'
+    );
+	// Copy Images
+	mix.copy(
+	   'public/plugins/chosen/chosen-sprite.png',
+	   'public/assets/css'
     );
 
 

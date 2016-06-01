@@ -1,0 +1,221 @@
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+section.filter-area {
+    margin-top: 30px;
+}
+
+.box {
+    margin-top: 10px;
+}
+
+.box-title .page-number {
+    margin-left: 10px;
+}
+
+.pager li>a,
+.pager li>span {
+    width: 80px;
+}
+
+
+/*form-inline*/
+.form-inline label {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/*table*/
+.table a {
+    color: #000;
+}
+
+.table .btn {
+    color: #fff;
+}
+
+.table img {
+    max-height: 40px;
+}
+
+.table .the-title {
+    font-size: 17px;
+}
+
+.table .more-info {
+    font-size: 13px;
+}
+
+.table .more-info li {
+    margin-right: 5px;
+    color: #999;
+}
+
+.table .more-info .fa {
+    margin-right: 3px;
+}
+
+.theID {
+    display: none;
+}
+
+/*Data-Tables*/
+.dataTables_wrapper {
+    padding: 10px;
+}
+
+
+/*List resource*/
+
+.footer-table {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.footer-table .pagination {
+    margin: 0;
+    float: right;
+}
+
+
+/*callout*/
+
+.callout a {
+    text-decoration: none;
+}
+
+
+/*actions*/
+
+table.table .status {
+    width: 90px;
+    text-align: center;
+}
+
+table.table .actions {
+    width: 100px;
+}
+
+table.table .actions li {
+    margin: 0 -3px;
+}
+
+table.table .actions a {
+    color: #fff;
+}
+
+table.table .actions a.btn-default {
+    color: #000;
+}
+
+table .child-row > td {
+    text-indent: 15px;
+}
+
+table .child-row li {
+    text-indent: 0;
+}
+
+
+/*Chosen*/
+
+.chosen-container {
+    width: 100% !important;
+}
+
+.chosen-container .chosen-single,
+.chosen-container .chosen-choices {
+    background-image: none;
+    box-shadow: none;
+    width: 100%;
+    height: 34px;
+    padding: 3px 12px;
+    border: 1px solid #CCC;
+}
+
+.chosen-container-single .chosen-single,
+.chosen-container-single .chosen-drop {
+    border-radius: 0px;
+}
+
+.chosen-container .chosen-single div b {
+    background-position: 0px 7px;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 7px;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+    background-image: none;
+}
+
+.chosen-container .chosen-results li.highlighted {
+    background-image: none;
+    background-color: #00C0EF;
+}
+
+.chosen-container .chosen-drop,
+.chosen-container .chosen-search input[type="text"],
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-choices {
+    border-color: #00C0EF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+select.chosen {
+    height: 0!important;
+    opacity: 0!important;
+    padding: 0!important;
+    display: block!important;
+}
+
+
+/*CKEditor*/
+
+.fm-modal {
+    z-index: 10011;
+    /** Because CKEditor image dialog was at 10010 */
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border: 0;
+    position: fixed;
+    -moz-box-shadow: 0px 1px 5px 0px #656565;
+    -webkit-box-shadow: 0px 1px 5px 0px #656565;
+    -o-box-shadow: 0px 1px 5px 0px #656565;
+    box-shadow: 0px 1px 5px 0px #656565;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+}
+
+
+/*actions-list*/
+
+section.actions-list {
+    margin-left: 73px;
+    margin-top: 20px;
+}
+
+section.actions-list .form-control {
+    max-width: 200px
+}
+
+section.actions-list #selectAll {
+    margin-right: 10px;
+}
+
+.selectMe {
+    position: relative;
+    left: 20px;
+}

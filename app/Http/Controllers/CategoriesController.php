@@ -19,7 +19,7 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $items = Category::all();
+        $items = Category::with('parent')->get();
 
         return view('admin.categories.index', compact('items'));
     }
@@ -42,16 +42,10 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), Category::rules());
 
-        if ($validator->fails()) {
-            return back()->withInput()->withErrors($validator);
-        }
-
-        
         Category::create($request->all());
 
-        return back()->withSuccess('Élément ajouté');
+        return back()->withSuccess(trans('app.success_store'));
     }
 
     /**
@@ -87,17 +81,11 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validator = Validator::make($request->all(), Category::rules(true));
-
-        if ($validator->fails()) {
-            return back()->withErrors($validator);
-        }
-
         $item = Category::findOrFail($id);
 
         $item->update($request->all());
 
-        return back()->withSuccess('Mise à jour faite avec succès');
+        return back()->withSuccess(trans('app.success_update'));
     }
 
     /**
@@ -110,7 +98,7 @@ class CategoriesController extends Controller
     {
         Category::destroy($id);
 
-        return redirect()->route(ADMIN . '.categories.index')->withSuccess('Supprimé avec succès'); 
+        return redirect()->route(ADMIN . '.categories.index')->withSuccess(trans('app.success_destroy')); 
     }
 }
 

@@ -15,16 +15,16 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.4",
     "AdminLTE": "admin-lte#^2.3.3",
+    "Ionicons": "ionicons#^2.0.1",
     "bootstrap": "^3.3.6",
     "chosen": "^1.5.1",
-    "ckeditor": "^4.5.9",
+    "ckeditor": "#full/4.5.9",
     "datatables": "^1.10.12",
-    "datatables-bootstrap": "^1.0.0",
-    "font-awesome": "fontawesome#^4.6.3",
+    "datatables-plugins": "^1.10.11",
     "datetimepicker": "^2.5.4",
-    "sweetalert2": "^3.2.3",
-    "Ionicons": "ionicons#^2.0.1"
+    "font-awesome": "fontawesome#^4.6.3",
+    "jquery": "^2.2.4",
+    "sweetalert2": "^3.2.3"
   }
 }

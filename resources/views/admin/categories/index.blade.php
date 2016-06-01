@@ -52,7 +52,7 @@
 	                        </td>
 	                        <td class="actions">
                                 <ul class="list-inline">
-                                    <li><a href="{{ route(ADMIN . '.categories.edit', $item->id) }}" title="Modifier l'élément" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a></li>
+                                    <li><a href="{{ route(ADMIN . '.categories.edit', $item->id) }}" title="{{ trans('app.edit_title') }}" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a></li>
                                     <li>
                                         {!! Form::open([
                                             'class'=>'delete',
@@ -61,7 +61,7 @@
                                             ]) 
                                         !!}
 
-                                            <button class="btn btn-danger btn-xs" title="Supprimer l'élément"><i class="fa fa-trash"></i></button>
+                                            <button class="btn btn-danger btn-xs" title="{{ trans('app.delete_title') }}"><i class="fa fa-trash"></i></button>
                                             
                                         {!! Form::close() !!}
                                 </ul>

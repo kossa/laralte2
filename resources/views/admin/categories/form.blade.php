@@ -10,7 +10,10 @@
 
         {!! Form::myInput('text', 'name', 'Titre', ['required']) !!}
 
-        {!! Form::mySelect('parent_id', 'Categorie mére', ['' => ''] + App\Category::lists('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
+        {!! Form::mySelect('parent_id', 'Parent category', ['' => ''] + App\Category::lists('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
+
+        @include('admin._partials.ckeditor')
+        {!! Form::myTextArea('text', 'text', ['class'=>'ckeditor']) !!}
 
       </div>
     </div>
