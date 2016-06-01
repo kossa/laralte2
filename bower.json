@@ -24,6 +24,7 @@
     "datatables-bootstrap": "^1.0.0",
     "font-awesome": "fontawesome#^4.6.3",
     "datetimepicker": "^2.5.4",
-    "sweetalert2": "^3.2.3"
+    "sweetalert2": "^3.2.3",
+    "Ionicons": "ionicons#^2.0.1"
   }
 }
