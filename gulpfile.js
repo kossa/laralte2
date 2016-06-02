@@ -47,6 +47,11 @@ elixir(function(mix) {
 	   'public/plugins/chosen/chosen-sprite.png',
 	   'public/assets/css'
     );
+    // Copy API template
+	mix.copy(
+	   'public/plugins/apidocs/template',
+	   'public/api'
+    );
 
 
 	// Versionning

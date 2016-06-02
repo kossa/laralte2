@@ -9,6 +9,7 @@ define('ADMIN', env('APP_ADMIN', 'admin'));
 */
 Route::group(['prefix' => 'api/v1', 'namespace' => 'Api'], function(){
 	Route::get('categories', 'CategoriesController@index');
+	Route::get('categories/{id}', 'CategoriesController@show');
 });
 
 /*

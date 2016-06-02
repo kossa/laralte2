@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "AdminLTE": "admin-lte#^2.3.3",
+    "apidocs": "apidoc/apidoc",
     "Ionicons": "ionicons#^2.0.1",
     "bootstrap": "^3.3.6",
     "chosen": "^1.5.1",
