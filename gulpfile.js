@@ -18,7 +18,8 @@ elixir(function(mix) {
 		'/chosen/chosen.css',
 		'/datatables/media/css/dataTables.bootstrap.min.css',
 		'/AdminLTE/dist/css/AdminLTE.min.css',
-		'/AdminLTE/dist/css/skins/skin-blue.min.css'
+		'iCheck/skins/square/blue.css',
+		'/AdminLTE/dist/css/skins/skin-blue.min.css',
 	], 'public/assets/css/admin.css');
 
     // Join JS files
@@ -30,6 +31,7 @@ elixir(function(mix) {
 		'datatables/media/js/dataTables.bootstrap.js',
 		'sweetalert2/dist/sweetalert2.min.js',
 		'chosen/chosen.jquery.js',
+		'iCheck/icheck.min.js',
 		'AdminLTE/dist/js/app.min.js',
 	], 'public/assets/js/admin.js');
 
@@ -45,6 +47,11 @@ elixir(function(mix) {
 	// Copy Images
 	mix.copy(
 	   'public/plugins/chosen/chosen-sprite.png',
+	   'public/assets/css'
+    );
+    // Copy Icheck icons
+	mix.copy(
+	   'public/plugins/iCheck/skins/square/blue.png',
 	   'public/assets/css'
     );
     // Copy API template

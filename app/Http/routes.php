@@ -2,6 +2,8 @@
 
 define('ADMIN', env('APP_ADMIN', 'admin'));
 
+Route::auth();
+
 /*
 |------------------------------------------------------------------------------------
 | Api
@@ -27,12 +29,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::auth();
-
-Route::get('test', function(){
-	return view('admin.default');
-});
