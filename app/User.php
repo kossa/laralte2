@@ -23,4 +23,57 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    /*
+    |------------------------------------------------------------------------------------
+    | Validations
+    |------------------------------------------------------------------------------------
+    */
+    public static function rules($update = false)
+    {
+        $commun = [
+            'email'    => 'required|email',
+            'password' => 'confirmed',
+        ];
+
+        if ($update) {
+            return $commun;
+        }
+
+        return array_merge($commun, [
+            'email'    => 'required|unique:users',
+            'password' => 'required|confirmed',
+        ]);
+
+        return $create;
+    }
+
+    /*
+    |------------------------------------------------------------------------------------
+    | Attributes
+    |------------------------------------------------------------------------------------
+    */
+    public function setPasswordAttribute($value='')
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
+
+    
+    /*
+    |------------------------------------------------------------------------------------
+    | Boot
+    |------------------------------------------------------------------------------------
+    */
+    public static function boot()
+    {
+        parent::boot();
+        static::updating(function($user)
+        {
+            $original = $user->getOriginal();
+            
+            if (\Hash::check('', $user->password)) {
+                $user->attributes['password'] = $original['password'];
+            }
+        });
+    }
 }

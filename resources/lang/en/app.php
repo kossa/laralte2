@@ -12,11 +12,13 @@ return [
 	"delete_title" => "Delete Item",
 
 	// Login, Logout ..etc
-	"start_session"   => "Sign in to start your session",
-	"remember_me"     => "Remember Me",
-	"forgot_password" => "I forgot my password",
-	"login_btn"       => "Sign In",
-	"reset_password"  => "Reset Password",
+	"start_session"      => "Sign in to start your session",
+	"remember_me"        => "Remember Me",
+	"forgot_password"    => "I forgot my password",
+	"login_btn"          => "Sign In",
+	"reset_password"     => "Reset Password",
+	"reset_password_btn" => "Send reset link",
+	"connect"            => "Loggin",
 
 
 
