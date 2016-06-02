@@ -20,6 +20,7 @@ elixir(function(mix) {
 		'/AdminLTE/dist/css/AdminLTE.min.css',
 		'iCheck/skins/square/blue.css',
 		'/AdminLTE/dist/css/skins/skin-blue.min.css',
+		'/admin/custom.css',
 	], 'public/assets/css/admin.css');
 
     // Join JS files
@@ -33,7 +34,15 @@ elixir(function(mix) {
 		'chosen/chosen.jquery.js',
 		'iCheck/icheck.min.js',
 		'AdminLTE/dist/js/app.min.js',
+		'/admin/custom.js',
 	], 'public/assets/js/admin.js');
+
+	// Versionning
+	mix.version(['public/assets/css/admin.css', 'public/assets/js/admin.js']);
+});
+
+
+elixir(function(mix) {
 
     // Copy Fonts
 	mix.copy(
@@ -65,9 +74,4 @@ elixir(function(mix) {
 	   'public/api'
     );
 
-
-	// Versionning
-	mix.version(['public/assets/css/admin.css', 'public/assets/js/admin.js']);
 });
-
-
