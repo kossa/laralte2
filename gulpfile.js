@@ -49,6 +49,11 @@ elixir(function(mix) {
 	   'public/plugins/chosen/chosen-sprite.png',
 	   'public/assets/css'
     );
+	// Copy Images
+	mix.copy(
+	   'public/plugins/AdminLTE/dist/img/user2-160x160.jpg',
+	   'public/img'
+    );
     // Copy Icheck icons
 	mix.copy(
 	   'public/plugins/iCheck/skins/square/blue.png',
