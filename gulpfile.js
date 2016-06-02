@@ -3,7 +3,7 @@ elixir.config.assetsPath = 'public/plugins/';
 elixir.config.css.folder = '';
 elixir.config.js.folder = '';
 
-elixir.config.versioning.buildFolder = '/';
+elixir.config.versioning.buildFolder = '/'; // Change outpu folder
 
 
 elixir(function(mix) {
