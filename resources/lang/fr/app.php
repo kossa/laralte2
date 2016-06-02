@@ -12,10 +12,13 @@ return [
 	"delete_title" => "Supprimer l'élément",
 
 	// Login, Logout ..etc
-	"start_session"   => "Connectez-vous pour commencer votre session",
-	"remember_me"     => "Souviens-toi de moi",
-	"forgot_password" => "j'ai oublié mon mot de passe",
-	"login_btn"       => "Connecter",
+	"start_session"      => "Connectez-vous pour commencer votre session",
+	"remember_me"        => "Souviens-toi de moi",
+	"forgot_password"    => "j'ai oublié mon mot de passe",
+	"login_btn"          => "Connecter",
+	"reset_password"     => "Réinitialiser mot de passe",
+	"reset_password_btn" => "Envoyer lien de réinitialisation",
+	"connect"            => "S'identifier",
 
 
 
