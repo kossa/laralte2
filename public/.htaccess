@@ -49,39 +49,38 @@
     # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
 
     <IfModule mod_filter.c>
-        AddOutputFilterByType DEFLATE 
-            "application/atom+xml" \
-            "application/javascript" \
-            "application/json" \
-            "application/ld+json" \
-            "application/manifest+json" \
-            "application/rdf+xml" \
-            "application/rss+xml" \
-            "application/schema+json" \
-            "application/vnd.geo+json" \
-            "application/vnd.ms-fontobject" \
-            "application/x-font-ttf" \
-            "application/x-javascript" \
-            "application/x-web-app-manifest+json" \
-            "application/xhtml+xml" \
-            "application/xml" \
-            "font/eot" \
-            "font/opentype" \
-            "image/bmp" \
-            "image/svg+xml" \
-            "image/vnd.microsoft.icon" \
-            "image/x-icon" \
-            "text/cache-manifest" \
-            "text/css" \
-            "text/html" \
-            "text/javascript" \
-            "text/plain" \
-            "text/vcard" \
-            "text/vnd.rim.location.xloc" \
-            "text/vtt" \
-            "text/x-component" \
-            "text/x-cross-domain-policy" \
-            "text/xml"
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/json" \
+                                      "application/ld+json" \
+                                      "application/manifest+json" \
+                                      "application/rdf+xml" \
+                                      "application/rss+xml" \
+                                      "application/schema+json" \
+                                      "application/vnd.geo+json" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/x-font-ttf" \
+                                      "application/x-javascript" \
+                                      "application/x-web-app-manifest+json" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/eot" \
+                                      "font/opentype" \
+                                      "image/bmp" \
+                                      "image/svg+xml" \
+                                      "image/vnd.microsoft.icon" \
+                                      "image/x-icon" \
+                                      "text/cache-manifest" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/javascript" \
+                                      "text/plain" \
+                                      "text/vcard" \
+                                      "text/vnd.rim.location.xloc" \
+                                      "text/vtt" \
+                                      "text/x-component" \
+                                      "text/x-cross-domain-policy" \
+                                      "text/xml"
 
     </IfModule>
 
@@ -106,6 +105,18 @@
 
 </IfModule>
 
+
+# ----------------------------------------------------------------------
+# | Expires headers                                                    |
+# ----------------------------------------------------------------------
+
+# Serve resources with far-future expires headers.
+#
+# (!) If you don't control versioning with filename-based
+# cache busting, you should consider lowering the cache times
+# to something like one week.
+#
+# https://httpd.apache.org/docs/current/mod/mod_expires.html
 
 <IfModule mod_expires.c>
 
@@ -195,3 +206,4 @@
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
+
