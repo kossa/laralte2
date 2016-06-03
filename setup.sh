@@ -3,9 +3,9 @@ clear
 
 [[ `which git 2>/dev/null` ]] || echo "Err! git binary not found in PATH" || exit 1
 [[ `which composer 2>/dev/null` ]] || echo "Err! composer binary not found in PATH" || exit 1
-[[ `which npm 2>/dev/null` ]] || echo "Err! npm binary not found in PATH" || exit 1
-[[ `which bower 2>/dev/null` ]] || echo "Err! bower binary not found in PATH" || exit 1
 [[ `which php 2>/dev/null` ]] || echo "Err! php binary not found in PATH" || exit 1
+[[ `which npm 2>/dev/null` ]] || echo "Warning! npm binary not found in PATH"
+[[ `which bower 2>/dev/null` ]] || echo "Warning! bower binary not found in PATH"
 
 git clone https://github.com/kossa/laralte2.git
 cd laralte2
