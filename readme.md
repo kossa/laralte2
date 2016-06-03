@@ -7,7 +7,7 @@ When I start a new Laravel project, I do the same thing, install my packages, do
 ### Installation :
 All you need is to run those commands :
 ```bash
-git clone https://github.com/kossa/laralte2.git # clone or download the repon directly
+git clone https://github.com/kossa/laralte2.git # clone or download the repo directly
 cd laralte2 
 composer install # to install all php dependencies
 cp .env.example .env # update data base access
