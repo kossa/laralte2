@@ -9,9 +9,11 @@ This repository helps me bootstrap  all of that.
 ## Setup:
 All you need is to run these commands:
 ```bash
+git clone https://github.com/kossa/laralte2.git
+cd laralte2 
 composer install                   # Install backend dependencies
 bower install                      # Install frontend dependencies
-cp .env.example .env               # Update database credentials
+cp .env.example .env               # Update database credentials configuration
 php artisan key:generate           # Generate new keys for Laravel
 php artisan migrate:refresh --seed # Run migration and seed users and categories for testing
 sudo chmod 777 storage/ -R         # Chmod Storage
@@ -38,6 +40,8 @@ Password: 123456
 * [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) : for debugging
 * [Intervention Image](https://github.com/intervention/image) : image handling and manipulation
 * [Laravel RESTful API format](https://github.com/teepluss/laravel-restable) : To create Rest API
+* [Date](https://github.com/jenssegers/date): To define date format for Arabic and French. No need to worry about server configuration
+* [Widgets](https://github.com/arrilot/laravel-widgets): Insert widgets in frontend
 * [Redis](https://github.com/nrk/predis.git) : for chache
 
 #### JS plugins:

@@ -4,9 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "49ec5e48b18a61a6cbae07da85336ca1",
-    "content-hash": "8a7aec1e04656f47fe9f91e7e1696c52",
+    "hash": "cb85904acfdd01b00dd36cc86d3856e6",
+    "content-hash": "d65dccd55375939a841b268ace8c8fe5",
     "packages": [
+        {
+            "name": "arrilot/laravel-widgets",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arrilot/laravel-widgets.git",
+                "reference": "440e5cdca6b7a70e89b114737ff7605369dd9897"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arrilot/laravel-widgets/zipball/440e5cdca6b7a70e89b114737ff7605369dd9897",
+                "reference": "440e5cdca6b7a70e89b114737ff7605369dd9897",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.*",
+                "illuminate/container": "5.*",
+                "illuminate/contracts": "5.*",
+                "illuminate/support": "5.*",
+                "illuminate/view": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arrilot\\Widgets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nekrasov Ilya",
+                    "email": "nekrasov.ilya90@gmail.com"
+                }
+            ],
+            "description": "A powerful alternative to view composers. Asynchronous widgets, reloadable widgets, console generator, caching - everything you can think of.",
+            "homepage": "https://github.com/Arrilot/laravel-widgets",
+            "keywords": [
+                "ajax",
+                "laravel",
+                "widgets"
+            ],
+            "time": "2016-05-21 19:10:34"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v2.2.2",
@@ -536,6 +586,63 @@
             "time": "2015-04-20 18:58:01"
         },
         {
+            "name": "jenssegers/date",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "000caf2e52c5029a746c244390e304413abbbd28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/000caf2e52c5029a746c244390e304413abbbd28",
+                "reference": "000caf2e52c5029a746c244390e304413abbbd28",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0",
+                "php": ">=5.4",
+                "symfony/translation": "^2.0|^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2016-04-07 12:00:23"
+        },
+        {
             "name": "jeremeamia/SuperClosure",
             "version": "2.2.0",
             "source": {
@@ -595,16 +702,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.34",
+            "version": "v5.2.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6a26f3bb6a6e00c53654a661221643ad1b98e146"
+                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6a26f3bb6a6e00c53654a661221643ad1b98e146",
-                "reference": "6a26f3bb6a6e00c53654a661221643ad1b98e146",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
+                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
                 "shasum": ""
             },
             "require": {
@@ -720,7 +827,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-05-26 21:59:46"
+            "time": "2016-05-30 17:42:01"
         },
         {
             "name": "laravelcollective/html",
@@ -1190,23 +1297,23 @@
         },
         {
             "name": "predis/predis",
-            "version": "v1.0.3",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "84060b9034d756b4d79641667d7f9efe1aeb8e04"
+                "reference": "0e17edbefb50c6cbd1acc4a6f6ef06399deb1af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/84060b9034d756b4d79641667d7f9efe1aeb8e04",
-                "reference": "84060b9034d756b4d79641667d7f9efe1aeb8e04",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/0e17edbefb50c6cbd1acc4a6f6ef06399deb1af2",
+                "reference": "0e17edbefb50c6cbd1acc4a6f6ef06399deb1af2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.8"
             },
             "suggest": {
                 "ext-curl": "Allows access to Webdis when paired with phpiredis",
@@ -1229,14 +1336,14 @@
                     "homepage": "http://clorophilla.net"
                 }
             ],
-            "description": "Flexible and feature-complete PHP client library for Redis",
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
             "homepage": "http://github.com/nrk/predis",
             "keywords": [
                 "nosql",
                 "predis",
                 "redis"
             ],
-            "time": "2015-07-30 18:34:15"
+            "time": "2016-06-01 22:06:21"
         },
         {
             "name": "psr/http-message",
@@ -1569,16 +1676,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.0.6",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "807dde98589f9b2b00624dca326740380d78dbbc"
+                "reference": "0343b2cedd0edb26cdc791212a8eb645c406018b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/807dde98589f9b2b00624dca326740380d78dbbc",
-                "reference": "807dde98589f9b2b00624dca326740380d78dbbc",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0343b2cedd0edb26cdc791212a8eb645c406018b",
+                "reference": "0343b2cedd0edb26cdc791212a8eb645c406018b",
                 "shasum": ""
             },
             "require": {
@@ -1598,7 +1705,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1625,7 +1732,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-05 06:56:13"
+            "time": "2016-04-12 18:27:47"
         },
         {
             "name": "symfony/finder",
@@ -3502,16 +3609,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.6",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0047c8366744a16de7516622c5b7355336afae96"
+                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0047c8366744a16de7516622c5b7355336afae96",
-                "reference": "0047c8366744a16de7516622c5b7355336afae96",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
+                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
                 "shasum": ""
             },
             "require": {
@@ -3520,7 +3627,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -3547,7 +3654,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-04 07:55:57"
+            "time": "2016-05-26 21:46:24"
         }
     ],
     "aliases": [],
