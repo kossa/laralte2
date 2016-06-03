@@ -10,7 +10,7 @@ All you need is to run those commands :
 git clone https://github.com/kossa/laralte2.git # clone or download the repo directly
 cd laralte2 
 composer install # to install all php dependencies
-cp .env.example .env # update data base access
+cp .env.example .env # don't forget to update data base access ..etc
 php artisan key:generate # Generate new key for Laravel
 php artisan migrate:refresh --seed # Run migration and seed users and categories for testing
 sudo chmod 777 storage/ -R # Chmod Storage
