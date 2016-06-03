@@ -7,6 +7,8 @@ When I start a new Laravel project, I do the same thing, install my packages, do
 ### Installation :
 All you need is to run those commands :
 ```bash
+git clone https://github.com/kossa/laralte2.git # clone or download the repon directly
+cd laralte2 
 composer install # to install all php dependencies
 cp .env.example .env # update data base access
 php artisan key:generate # Generate new key for Laravel
@@ -30,6 +32,8 @@ _Note: use test@example.com/123456 to access_
 * [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) : for debugging
 * [Intervention Image](https://github.com/intervention/image) : image handling and manipulation
 * [Laravel RESTful API format](https://github.com/teepluss/laravel-restable) : To create Rest API
+* [Date](https://github.com/jenssegers/date): To mdefine date format for Arabic, French, don't need to worry about server configuration
+* [Widgets](https://github.com/arrilot/laravel-widgets): Insert widgets in front-end
 * [Redis](https://github.com/nrk/predis.git) : for chache
 
 #### JS plugins:
