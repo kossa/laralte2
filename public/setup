@@ -10,8 +10,8 @@ clear
 git clone https://github.com/kossa/laralte2.git
 cd laralte2
 composer install                                     # Install backend dependencies
-[[ `which bower 2>/dev/null` ]] bower install        # Install frontend dependencies
-[[ `which npm 2>/dev/null` ]] npm install apidoc -g  # Install apidoc
+[[ `which bower 2>/dev/null` ]] && bower install        # Install frontend dependencies
+[[ `which npm 2>/dev/null` ]] && npm install apidoc -g  # Install apidoc
 
 # Default credentials
 DBNAME=${DBNAME:-LLTE2}
