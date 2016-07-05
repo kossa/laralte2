@@ -9,7 +9,7 @@ Route::auth();
 | Api
 |------------------------------------------------------------------------------------
 */
-Route::group(['prefix' => 'api/v1', 'namespace' => 'Api'], function(){
+Route::group(['prefix' => 'api/v1', 'namespace' => 'Api', 'middleware' => 'ApiToken'], function(){
 	Route::get('categories', 'CategoriesController@index');
 	Route::get('categories/{id}', 'CategoriesController@show');
 });
