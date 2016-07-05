@@ -88,7 +88,7 @@ Rest Controllers are in the `App\Http\Controllers\Api` namespace.
 * Run this command : `apidoc -i app/Http/Controllers/Api/ -o public/api/ -t resources/apiTemplate/`
 * That's all :)
 
-*__Note:__ The API is protected so when you send a request you should include `APP-TOKEN` in the header, this value will be in your `.env` file check [this middleware](https://github.com/kossa/laralte2/blob/master/app/Http/Middleware/ApiToken.php#L21)*
+*__Note:__ The API is protected by token, so when you send a request you should include `APP-TOKEN` in the header, this value will be compared to `APP_TOKEN` `.env` file check [this middleware](https://github.com/kossa/laralte2/blob/master/app/Http/Middleware/ApiToken.php#L21)*
 
 
 ## Create new CRUD
