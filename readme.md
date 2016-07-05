@@ -30,6 +30,8 @@ Open browser at [localhost:8000/admin](http://localhost:8000/admin)
 Username: test@example.com  
 Password: 123456
 
+All the data are reset each 30mn ;)
+
 ***
 
 ## Included Packages:
