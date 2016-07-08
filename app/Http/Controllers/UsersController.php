@@ -48,7 +48,7 @@ class UsersController extends Controller
 
         
         $user = User::create($request->all());
-        event( new NewUser($request->get('password'), $user));
+        // event( new NewUser($request->get('password'), $user));
 
         return back()->withSuccess(trans('app.success_store'));
     }
