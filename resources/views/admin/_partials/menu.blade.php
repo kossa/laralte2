@@ -5,7 +5,7 @@
 
 
 <ul class="sidebar-menu">
-  <li class="header">CONTENU</li>
+  <li class="header">MENU</li>
   
   <li class="<?php echo ( starts_with($route, ADMIN.'.dash') ) ? "active" : '' ?>">
     <a href="{{ route(ADMIN.'.dash') }}">
