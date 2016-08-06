@@ -11,7 +11,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  <link rel="stylesheet" href="{{ elixir('assets/css/admin.css', '/') }}">  
+  @if (env('COMPRESS_ASSETS', true))
+    <link rel="stylesheet" href="{{ elixir('assets/css/admin.css', '/') }}">  
+  @else
+    <link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/plugins/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/plugins/datetimepicker/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="/plugins/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/plugins/chosen/chosen.css">
+    <link rel="stylesheet" href="/plugins/datatables/media/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/AdminLTE/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/plugins/iCheck/skins/square/blue.css">
+    <link rel="stylesheet" href="/plugins/AdminLTE/dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/plugins/admin/custom.css">
+  @endif
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -138,7 +152,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- REQUIRED JS SCRIPTS -->
 
-  <script src="{{ elixir('assets/js/admin.js', '/') }}"></script>
+  @if (env('COMPRESS_ASSETS', true))
+    <script src="{{ elixir('assets/js/admin.js', '/') }}"></script>
+  @else
+    <script src="/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/plugins/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+    <script src="/plugins/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="/plugins/chosen/chosen.jquery.js"></script>
+    <script src="/plugins/iCheck/icheck.min.js"></script>
+    <script src="/plugins/AdminLTE/dist/js/app.min.js"></script>
+    <script src="/plugins/admin/custom.js"></script>
+  @endif
 
   @yield('add-js')
 
