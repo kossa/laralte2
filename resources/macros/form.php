@@ -1,4 +1,3 @@
-
 <?php
 
 Form::macro('myInput', function($type="text", $name, $label="", $options=[], $default = null)
