@@ -71,7 +71,7 @@
 		Google+</a>
 	</div>
 
-	<a href="login.html" class="text-center">I already have a membership</a>
+	<a href="{{url('login')}}" class="text-center">I already have a membership</a>
   
 
 @endsection
