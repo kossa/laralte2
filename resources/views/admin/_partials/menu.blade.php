@@ -1,7 +1,6 @@
 <?php $r = \Route::current()->getAction() ?>
 <?php $route = (isset($r['as'])) ? $r['as'] : ''; ?>
 
-<?php var_dump(Route::current()) ?>
 
 
 <ul class="sidebar-menu">

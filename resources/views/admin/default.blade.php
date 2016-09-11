@@ -89,7 +89,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="{{ route(ADMIN . '.users.edit', Auth::id()) }}" class="btn btn-default btn-flat">Profile</a>
                   </div>
                   <div class="pull-right">
-                    <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
+                    {!! Form::open(['url'=>'logout']) !!}
+                      <button type="submit" class="btn btn-default btn-flat">Sign out</button>
+                    {!! Form::close() !!}
                   </div>
                 </li>
               </ul>
