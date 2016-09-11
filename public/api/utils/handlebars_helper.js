@@ -201,19 +201,6 @@ define([
     /**
      *
      */
-    Handlebars.registerHelper('reformat', function(source, type){
-        if (type == 'json')
-            try {
-               return JSON.stringify(JSON.parse(source.trim()),null, "    ");
-            } catch(e) {
-
-            }
-        return source
-    });
-
-    /**
-     *
-     */
     Handlebars.registerHelper('showDiff', function(source, compare, options) {
         var ds = '';
         if(source === compare) {
