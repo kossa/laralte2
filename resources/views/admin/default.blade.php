@@ -11,7 +11,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  @if (env('APP_DEBUG', true))
+  @if (! env('APP_DEBUG', true))
     <link rel="stylesheet" href="{{ elixir('assets/css/admin.css', '/') }}">  
   @else
     <link rel="stylesheet" href="/plugins/bootstrap/dist/css/bootstrap.min.css">
@@ -154,7 +154,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- REQUIRED JS SCRIPTS -->
 
-  @if (env('APP_DEBUG', true))
+  @if (! env('APP_DEBUG', true))
     <script src="{{ elixir('assets/js/admin.js', '/') }}"></script>
   @else
     <script src="/plugins/jquery/dist/jquery.min.js"></script>
