@@ -8,9 +8,7 @@ elixir.config.versioning.buildFolder = '/'; // Change outpu folder
 
 // Remove comments in css file
 elixir.config.css.minifier.pluginOptions = {
-    discardComments: {
-        keepSpecialComments: 0
-    }
+    keepSpecialComments: 0
 };
 
 elixir(function(mix) {
