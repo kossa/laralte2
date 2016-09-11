@@ -1,16 +1,21 @@
 <?php
 
+define('ADMIN', env('APP_ADMIN', 'admin'));
+
+Auth::routes();
+
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
-| to using a Closure or controller method. Build something great!
-|
+|------------------------------------------------------------------------------------
+| Admin
+|------------------------------------------------------------------------------------
 */
+Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>'auth'], function() {
+    Route::get('/', ['uses'=>'CategoriesController@index', 'as'=>'dash']);
+    Route::resource('categories', 'CategoriesController');
+    Route::resource('users', 'UsersController');
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
+

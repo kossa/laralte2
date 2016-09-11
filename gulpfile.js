@@ -7,9 +7,9 @@ elixir.config.js.folder = '';
 elixir.config.versioning.buildFolder = '/'; // Change outpu folder
 
 // Remove comments in css file
-elixir.config.css.cssnano.pluginOptions = {
+elixir.config.css.minifier.pluginOptions = {
     discardComments: {
-        removeAll: true
+        keepSpecialComments: 0
     }
 };
 
