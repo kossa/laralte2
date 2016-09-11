@@ -8,8 +8,13 @@ return [
 	"success_destroy" => "Removed successfully",
 
 	// My Views
+	"manage"       => "manage",
 	"edit_title"   => "Edit Item",
 	"delete_title" => "Delete Item",
+
+	// View buttons
+	"add_button"    => "Add",
+	"edit_button"    => "Edit",
 
 	// Login, Logout ..etc
 	"start_session"      => "Sign in to start your session",

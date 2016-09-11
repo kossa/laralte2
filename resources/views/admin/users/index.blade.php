@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-    Utilisateurs <small>Gestion</small>
+    Users <small>{{ trans('app.manage') }}</small>
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@
 		<div class="row">
 			<div class="col-sm-10">
 				<ul class="list-inline">
-					<li><a class="btn btn-info" href="{{ route(ADMIN . '.users.create') }}">Ajouter</a></li>
+					<li><a class="btn btn-info" href="{{ route(ADMIN . '.users.create') }}">{{ trans('app.add_button') }}</a></li>
 				</ul>
 			</div>
 		</div>
@@ -48,7 +48,7 @@
 	                        <td>{{ $item->email }}</td>
 	                        <td class="actions">
                                 <ul class="list-inline">
-                                    <li><a href="{{ route(ADMIN . '.users.edit', $item->id) }}" title="Modifier le user" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a></li>
+                                    <li><a href="{{ route(ADMIN . '.users.edit', $item->id) }}" title="{{ trans('app.edit_title') }}" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a></li>
                                     <li>
                                         {!! Form::open([
                                             'class'=>'delete',
@@ -57,7 +57,7 @@
                                             ]) 
                                         !!}
 
-                                            <button class="btn btn-danger btn-xs" title="Supprimer le user"><i class="fa fa-trash"></i></button>
+                                            <button class="btn btn-danger btn-xs" title="{{ trans('app.delete_title') }}"><i class="fa fa-trash"></i></button>
                                             
                                         {!! Form::close() !!}
                                 </ul>

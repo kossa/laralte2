@@ -16,7 +16,7 @@
     @include('admin.users.form')
 
   	<div class="box-footer">
-  	  <button type="submit" class="btn btn-info">Modifier</button>
+  	  <button type="submit" class="btn btn-info">{{ trans('app.edit_button') }}</button>
   	</div>
     
   {!! Form::close() !!}

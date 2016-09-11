@@ -6,6 +6,8 @@ Whenever I start a new Laravel project, I do the same thing; Install packages, d
 This repository helps me bootstrap  all of that.
 
 
+**Note:**  ***if you want to use Laravel 5.2 please checkout to [5.2](https://github.com/kossa/laralte2/tree/5.2) branch***
+
 ## Setup:
 All you need is to run these commands:
 ```bash
@@ -41,6 +43,7 @@ All the data are reset each 30mn ;)
 * [Forms & HTML](https://github.com/laravelcollective/html) : for forms
 * [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) : for debugging
 * [Intervention Image](https://github.com/intervention/image) : image handling and manipulation
+* [Guzzle](https://github.com/guzzle/guzzle) : PHP HTTP client
 * [Laravel RESTful API format](https://github.com/teepluss/laravel-restable) : To create Rest API
 * [Date](https://github.com/jenssegers/date): To define date format for Arabic and French. No need to worry about server configuration
 * [Widgets](https://github.com/arrilot/laravel-widgets): Insert widgets in frontend
@@ -67,8 +70,8 @@ LaraLTE2 uses [Bower](http://bower.io/) for frontend dependency management:
 - Using [Laravel Elixir](https://github.com/laravel/elixir/), all CSS and JS are in minified to one file each.
 - LaraLTE2 leverages browser caching, using `.htaccess` file from [html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 - GZip compression is activated by default.  
-  - `admin-HASH.css`: 58.1KB with gzip (324.7Kb without)  
-  - `admin-HASH.js` : 99.6KB with gzip (320.9Kb without)
+  - `admin-HASH.css`: 57.6KB with gzip (323.8Kb without)  
+  - `admin-HASH.js` : 100KB with gzip (323.3Kb without)
 
 *__Note:__ If you're using Nginx check: [server-configs-nginx](https://github.com/h5bp/server-configs-nginx)*
 

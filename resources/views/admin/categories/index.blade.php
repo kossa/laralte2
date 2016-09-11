@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-    Categories <small>Gestion</small>
+    Categories <small>{{ trans('app.manage') }}</small>
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@
 		<div class="row">
 			<div class="col-sm-10">
 				<ul class="list-inline">
-					<li><a class="btn btn-info" href="{{ route(ADMIN . '.categories.create') }}">Ajouter</a></li>
+					<li><a class="btn btn-info" href="{{ route(ADMIN . '.categories.create') }}">{{ trans('app.add_button') }}</a></li>
 				</ul>
 			</div>
 		</div>

@@ -11,9 +11,9 @@
         "barryvdh/laravel-debugbar": "^2.2",
         "intervention/image": "^2.3",
         "guzzlehttp/guzzle": "^6.2",
-        "arrilot/laravel-widgets": "^3.6",
         "teepluss/restable": "^2.0",
         "jenssegers/date": "^3.2",
+        "arrilot/laravel-widgets": "^3.6",
         "predis/predis": "^1.1"
     },
     "require-dev": {
