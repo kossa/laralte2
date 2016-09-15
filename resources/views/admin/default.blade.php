@@ -118,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
         </div>
 
-        @include('admin._partials.menu')
+        @include('admin.commun.menu')
         
       </section>
       <!-- /.sidebar -->
@@ -137,7 +137,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Main content -->
       <section class="content">
 
-        @include('admin._partials.flash-message')
+        @include('admin.commun.flash-message')
 
         @yield('content')
 
@@ -146,7 +146,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-wrapper -->
 
-    @include('admin._partials.footer')
+    @include('admin.commun.footer')
 
     <div class="control-sidebar-bg"></div>
   </div>

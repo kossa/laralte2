@@ -12,7 +12,7 @@
 
         {!! Form::mySelect('parent_id', 'Parent category', ['' => ''] + App\Category::pluck('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
 
-        {{-- @include('admin._partials.ckeditor')
+        {{-- @include('admin.commun.ckeditor')
         {!! Form::myTextArea('text', 'text', ['class'=>'ckeditor']) !!} --}}
 
       </div>
