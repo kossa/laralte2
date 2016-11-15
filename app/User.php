@@ -32,8 +32,10 @@ class User extends Authenticatable
     public static function rules($update = false)
     {
         $commun = [
-            'email'    => 'required|email',
+            'name' => 'required|max:255',
+            'email'    => 'required|email|max:255',
             'password' => 'confirmed',
+            'password' => 'required|min:6|confirmed',
         ];
 
         if ($update) {
@@ -41,8 +43,8 @@ class User extends Authenticatable
         }
 
         return array_merge($commun, [
-            'email'    => 'required|unique:users',
-            'password' => 'required|confirmed',
+            'email'    => 'required|email|max:255|unique:users',
+            'password' => 'required|confirmed|min:6',
         ]);
 
         return $create;
