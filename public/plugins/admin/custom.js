@@ -6,6 +6,7 @@
     |------------------------------------------------------------------------------------
     */
     var table = $('.data-tables').DataTable({
+        'aaSorting': [],
         'language': {
             // 'url': '/assets/i18n/dataTables-french.json'
             // 'url' : '/assets/i18n/dataTables-arabic.json'
