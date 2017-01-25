@@ -11,7 +11,7 @@ Form::macro('myInput', function($type="text", $name, $label="", $options=[], $de
     ";
 });
 
-Form::macro('mySelect', function($name, $label="", $values=[], $selected='', $options=[])
+Form::macro('mySelect', function($name, $label="", $values=[], $selected=null, $options=[])
 {
     $label = ($label =='') ? '' : html_entity_decode(Form::label($name, $label));
     return "

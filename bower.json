@@ -17,7 +17,6 @@
   "dependencies": {
     "AdminLTE": "admin-lte#^2.3.6",
     "apidocs": "apidoc/apidoc",
-    "Ionicons": "ionicons#^2.0.1",
     "bootstrap": "^3.3.7",
     "chosen": "^1.6.2",
     "ckeditor": "#full/4.5.10",
@@ -25,8 +24,9 @@
     "datatables-plugins": "^1.10.12",
     "datetimepicker": "^2.5.4",
     "font-awesome": "fontawesome#^4.6.3",
+    "iCheck": "icheck#^1.0.2",
+    "Ionicons": "ionicons#^2.0.1",
     "jquery": "^2.2.4",
-    "sweetalert2": "^4.2.6",
-    "iCheck": "icheck#^1.0.2"
+    "sweetalert2": "^4.2.6"
   }
 }
