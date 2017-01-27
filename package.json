@@ -13,5 +13,20 @@
     "laravel-mix": "^0.5.0",
     "lodash": "^4.16.2",
     "vue": "^2.0.1"
+  },
+  "dependencies": {
+    "admin-lte": "^2.3.11",
+    "apidoc": "^0.17.5",
+    "bootstrap": "^3.3.7",
+    "chosen-js": "^1.6.2",
+    "ckeditor": "^4.6.2",
+    "datatables": "^1.10.13",
+    "datatables-all": "^1.10.13",
+    "font-awesome": "^4.7.0",
+    "icheck": "^1.0.2",
+    "ionicons": "^3.0.0",
+    "jquery-datetimepicker": "^2.5.4",
+    "sweetalert2": "^6.3.2",
+    "vue-resource": "^1.0.3"
   }
 }
