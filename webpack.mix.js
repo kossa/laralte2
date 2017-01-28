@@ -19,6 +19,7 @@ mix.combine([
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/ionicons/dist/css/ionicons.min.css',
     'node_modules/admin-lte/dist/css/AdminLTE.min.css',
+    'node_modules/icheck/skins/square/blue.css',
     'node_modules/admin-lte/dist/css/skins/_all-skins.min.css'
     ], 'public/css/admin-vendor.css')
 
@@ -26,11 +27,12 @@ mix.combine([
 mix.combine([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/icheck/icheck.min.js',
     'node_modules/admin-lte/dist/js/app.min.js'
     ], 'public/js/admin-vendor.js')
 
 // Copy Fonts
-mix.copy(
+/*mix.copy(
    'node_modules/font-awesome/fonts',
    'public/fonts'
 );
@@ -40,3 +42,4 @@ mix.copy(
    'node_modules/admin-lte/dist/img',
    'public/img'
 );
+*/

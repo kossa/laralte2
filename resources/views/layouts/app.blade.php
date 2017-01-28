@@ -10,8 +10,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    @if (! env('APP_DEBUG', true))
+    <link rel="stylesheet" href="/css/admin-all.css">
+  @else
+    <!-- Vendors -->
+    <link rel="stylesheet" href="/css/admin-vendor.css">
+    <link rel="stylesheet" href="/css/admin-custom.css">
+  @endif
+
+  @yield('css')
 
     <!-- Scripts -->
     <script>
