@@ -10,7 +10,7 @@
 
         {!! Form::myInput('text', 'name', 'Titre', ['required']) !!}
 
-        {!! Form::mySelect('parent_id', 'Parent category', ['' => ''] + App\Category::pluck('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
+        {!! Form::mySelect('parent_id', 'Parent category', [0 => 'root'] + App\Category::pluck('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
 
         {{-- @include('admin.commun.ckeditor')
         {!! Form::myTextArea('text', 'text', ['class'=>'ckeditor']) !!} --}}

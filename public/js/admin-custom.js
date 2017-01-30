@@ -54,14 +54,14 @@
         var _this = $(this);
         e.preventDefault();
         swal({
-            title: 'Opération Dangereuse',
-            text: 'Êtes-vous sûr de continuer ?',
+            title: 'Are you sure?', // Opération Dangereuse
+            text: 'Are you sure to continue ?', // Êtes-vous sûr de continuer ?
             type: 'error',
             showCancelButton: true,
             confirmButtonColor: '#DD4B39',
             cancelButtonColor: '#00C0EF',
-            confirmButtonText: 'Oui, sûr!',
-            cancelButtonText: 'Annuler',
+            confirmButtonText: 'Yeah, sure!', // Oui, sûr
+            cancelButtonText: 'Cancel', // Annuler
             closeOnConfirm: false
         }).then(function(isConfirm) {
             if (isConfirm) {

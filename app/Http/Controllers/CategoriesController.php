@@ -15,7 +15,7 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $items = Category::all();
+        $items = Category::with('parent')->get();
 
         return view('admin.categories.index', compact('items'));
     }
