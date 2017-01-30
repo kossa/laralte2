@@ -22,7 +22,7 @@ class users extends Seeder
             'name' => $faker->name,
             'email' => 'test@example.com',
             'password' => bcrypt('123456'),
-            
+            'avatar' => 'user2-160x160.jpg',
         ]);
         
         User::insert($data);

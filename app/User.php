@@ -2,8 +2,11 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
+use App\Helpers\Helpers;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Validation\Rule;
+
 
 class User extends Authenticatable
 {
@@ -15,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'avatar'
     ];
 
     /**
@@ -32,22 +35,21 @@ class User extends Authenticatable
     | Validations
     |------------------------------------------------------------------------------------
     */
-    public static function rules($update = false)
+    public static function rules($update = false, $id = null)
     {
         $commun = [
-            'name'     => 'required|max:255',
-            'email'    => 'required|email|max:255',
-            'password' => 'confirmed',
-            'password' => 'required|min:6|confirmed',
+            'email'    => "required|email|unique:users,email,$id",
+            'password' => 'nullable|confirmed',
         ];
+
         if ($update) {
             return $commun;
         }
+
         return array_merge($commun, [
-            'email'    => 'required|email|max:255|unique:users',
+            'email'    => 'required|email|max:255',
             'password' => 'required|confirmed|min:6',
         ]);
-        return $create;
     }
 
     /*
@@ -58,6 +60,19 @@ class User extends Authenticatable
     public function setPasswordAttribute($value='')
     {
         $this->attributes['password'] = bcrypt($value);
+    }
+    
+    public function getAvatarAttribute($value)
+    {
+        if (!$value) {
+            return 'http://placehold.it/160x160';
+        }
+    
+        return config('variables.avatar.public').$value;
+    }
+    public function setAvatarAttribute($photo)
+    {
+        $this->attributes['avatar'] = Helpers::MoveImg($photo, 'avatar.image')->basename;
     }
 
     /*

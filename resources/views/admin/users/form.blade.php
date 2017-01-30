@@ -1,4 +1,4 @@
-<?php $title = isset($item) ? $item->username: "Creer un utilisateur" ?>
+<?php $title = isset($item) ? $item->name: "add new user" ?>
 
 <div class="row">
   <div class="col-sm-8">
@@ -8,13 +8,15 @@
       </div>
       <div class="box-body">
 
-        {!! Form::myInput('text', 'name', 'Nom complet') !!}
+        {!! Form::myInput('text', 'name', 'Username') !!}
 
         {!! Form::myInput('email', 'email', 'Email') !!}
 
-        {!! Form::myInput('password', 'password', 'Mot de passe') !!}
+        {!! Form::myInput('password', 'password', 'Password') !!}
 
-        {!! Form::myInput('password', 'password_confirmation', 'Confirmation mot de passe') !!}
+        {!! Form::myInput('password', 'password_confirmation', 'Password again') !!}
+
+        {!! Form::myFile('avatar', 'Avatar') !!}
 
       </div>
     </div>
