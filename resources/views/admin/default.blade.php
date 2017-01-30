@@ -81,10 +81,12 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        <a href="{{ route(ADMIN . '.users.edit', auth()->id()) }}" class="btn btn-default btn-flat">Profile</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        {!! Form::open(['url'=>'logout']) !!}
+                                            <button type="submit" class="btn btn-default btn-flat">Sign out</button>
+                                        {!! Form::close() !!}
                                     </div>
                                 </li>
                             </ul>
@@ -119,10 +121,10 @@
                 <form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
                         <input type="text" name="q" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                            </span>
                     </div>
                 </form>
                 <!-- /.search form -->
