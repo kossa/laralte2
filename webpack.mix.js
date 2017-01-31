@@ -12,7 +12,7 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js');
-
+/*
 // Combine Admin Css Vendor 
 mix.combine([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
@@ -63,10 +63,10 @@ mix.copy(
    'node_modules/admin-lte/dist/img',
    'public/img'
 );
-
+*/
 
 mix.copy(
-   'node_modules/ckeditor',
+   'node_modules/ckeditor/',
    'public/plugins/ckeditor'
 );
-*/
+
