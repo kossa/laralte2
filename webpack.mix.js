@@ -63,9 +63,10 @@ mix.copy(
    'node_modules/admin-lte/dist/img',
    'public/img'
 );
-*/
+
 
 mix.copy(
    'node_modules/ckeditor',
    'public/plugins/ckeditor'
 );
+*/
