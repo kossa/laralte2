@@ -18,6 +18,10 @@
 
         {!! Form::myFile('avatar', 'Avatar') !!}
 
+        @include('admin.commun.ckeditor')
+        {!! Form::myTextArea('bio', 'Bio', ['class'=>'ckeditor']) !!}
+
+
       </div>
     </div>
 

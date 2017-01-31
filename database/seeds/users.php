@@ -19,10 +19,11 @@ class users extends Seeder
         $data = [];
         
         array_push($data, [
-            'name' => $faker->name,
-            'email' => 'test@example.com',
+            'name'     => $faker->name,
+            'email'    => 'test@example.com',
             'password' => bcrypt('123456'),
-            'avatar' => 'user2-160x160.jpg',
+            'avatar'   => 'user2-160x160.jpg',
+            'bio'      => $faker->realText(),
         ]);
         
         User::insert($data);
