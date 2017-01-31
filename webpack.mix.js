@@ -64,3 +64,8 @@ mix.copy(
    'public/img'
 );
 */
+
+mix.copy(
+   'node_modules/ckeditor',
+   'public/plugins/ckeditor'
+);
