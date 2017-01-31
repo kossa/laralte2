@@ -1,0 +1,12 @@
+{
+  "name": "Laralte2 Api",
+  "version": "0.1.0",
+  "description": "ApiRest for Laralte2",
+  "title": "Laralte2 Api 0.1.0",
+  "url" : "http://localhost:8000/api/v1",
+      
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}
