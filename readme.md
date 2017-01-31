@@ -19,6 +19,7 @@ cp .env.example .env               # Update database credentials configuration
 php artisan key:generate           # Generate new keys for Laravel
 php artisan migrate:refresh --seed # Run migration and seed users and categories for testing
 sudo chmod 777 storage/ -R         # Chmod Storage
+npm run production                 # To compile assets for prod
 ```
 
 
