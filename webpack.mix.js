@@ -12,7 +12,7 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js');
-/*
+
 // Combine Admin Css Vendor 
 mix.combine([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
@@ -25,7 +25,7 @@ mix.combine([
     'node_modules/admin-lte/dist/css/AdminLTE.min.css',
     'node_modules/icheck/skins/square/blue.css',
     'node_modules/admin-lte/dist/css/skins/_all-skins.min.css'
-    ], 'public/css/admin-vendor.css')
+    ], 'public/css/admin-vendor.css');
 
 // Combine Admin All CSS
 mix.combine([
@@ -43,7 +43,8 @@ mix.combine([
     'node_modules/sweetalert2/dist/sweetalert2.min.js',
     'node_modules/chosen-js/chosen.jquery.js',
     'node_modules/icheck/icheck.min.js',
-    ], 'public/js/admin-vendor.js')
+    'node_modules/admin-lte/dist/js/app.min.js'
+    ], 'public/js/admin-vendor.js');
 
 // Combine Admin All CSS
 mix.combine([
@@ -63,10 +64,11 @@ mix.copy(
    'node_modules/admin-lte/dist/img',
    'public/img'
 );
-*/
+
 
 mix.copy(
    'node_modules/ckeditor/',
    'public/plugins/ckeditor'
 );
+*/
 

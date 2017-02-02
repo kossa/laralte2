@@ -1,7 +1,5 @@
 <?php 
 
-use Image;
-
 if (! function_exists('move_file')) {
     function move_file($file, $type='products.slide', $withWatermark = false)
     {
