@@ -33,7 +33,8 @@ Open browser at [localhost:8000/admin](http://localhost:8000/admin)
 Username: test@example.com  
 Password: 123456
 
-All the data are reset each 30mn ;)
+> All the data are reset each 30mn ;) 
+> **please d'ont forget to remove [this](https://github.com/kossa/laralte2/blob/master/app/Console/Kernel.php#L27-L28) function in your app** 
 
 ***
 
@@ -53,6 +54,7 @@ LaraLTE2 uses :
 
 * [Laravel Mix](laravel-mix)
 * [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
+* [AdminLTE-RTL](https://github.com/morteza/bootstrap-rtl) for RTL support
 * [ApiDocs](https://github.com/apidoc/apidoc)
 * [Ionicons](https://github.com/driftyco/ionicons)
 * [bootstrap](https://github.com/twbs/bootstrap)
@@ -79,13 +81,38 @@ LaraLTE2 uses :
 
 ![alt text](http://storage2.static.itmages.com/i/16/0602/h_1464877446_8945299_e45f066c58.png "Logo Title Text 1")
 
-
-## REST API
+### REST API
 As you may see in included packages, I used [ApiDocs](http://apidocjs.com/) to document all routes in `api/v1` and controllers in `Api` namespace.
 You can check the docs at [laralte2.bel4.com/api](http://laralte2.bel4.com/api/)
 
+*__Note:__ The API is protected by token, so when you send a request you should include `APP-TOKEN` in the header, this value will be compared to `APP_TOKEN` in `.env` file check [this middleware](https://github.com/kossa/laralte2/blob/master/app/Http/Middleware/ApiToken.php#L21)*
 
-#### Create new REST API ?
+
+#FAQ
+
+#### Create new CRUD
+Creating CRUD in your application is the job you do most. Let's create Post CRUD:
+
+* Add new migration and model : `php artisan make:model Post -m`
+* Open migration file and add your columns
+* Create PostsController : `php  artisan make:controller`. fill your resource (you can use CategoriesController with some changes) or, if you are a lazy developer like me, use a [snippet](https://github.com/kossa/st-snippets/blob/master/kossa_php/Laravel/lcontroller.sublime-snippet) and make only 2 changes
+* Duplicate `resource/views/admin/categories` folder to `posts`, make changes in `index.php`, `create.blade.php`, `edit.blade.php`
+
+#### Move Image and file ?
+To move images im using a [helper](https://github.com/kossa/laralte2/blob/master/app/Http/helpers.php#L4) function based on [intervention/image](https://github.com/intervention/image) and [variables.php](https://github.com/kossa/laralte2/blob/master/config/variables.php#L15) 
+you can check full example in [User.php](https://github.com/kossa/laralte2/blob/master/app/User.php#L73)
+
+
+#### Do you need RTL support ?
+* Copy/paste "rtl-dependencies" into "dependencies" [section](https://github.com/kossa/laralte2/blob/master/package.json#L33-L34)
+* Change all `pull-right` to `pull-left` in [default](https://github.com/kossa/laralte2/blob/master/resources/views/admin/default.blade.php) file and vise versa
+* Uncomment this [line](https://github.com/kossa/laralte2/blob/master/webpack.mix.js#L26) in webpack.mix.js
+* Run: `yarn upgrade && npm run dev`, you're ready to go ;)
+
+![alt text](http://storage9.static.itmages.com/i/17/0202/h_1486034161_6556436_4956bfbe09.png "Logo Title Text 1")
+
+
+#### Create new REST API 
 Rest Controllers are in the `App\Http\Controllers\Api` namespace.
 
 * Create new controller that extends `ApiController` class
@@ -95,13 +122,5 @@ Rest Controllers are in the `App\Http\Controllers\Api` namespace.
 * Run this command : `apidoc -i app/Http/Controllers/Api/ -o public/api/ -t resources/apiTemplate/`
 * That's all :)
 
-*__Note:__ The API is protected by token, so when you send a request you should include `APP-TOKEN` in the header, this value will be compared to `APP_TOKEN` in `.env` file check [this middleware](https://github.com/kossa/laralte2/blob/master/app/Http/Middleware/ApiToken.php#L21)*
-
-
-## Create new CRUD
-Creating CRUD in your application is the job you do most. Let's create Post CRUD:
-
-* Add new migration and model : `php artisan make:model Post -m`
-* Open migration file and add your columns
-* Create PostsController : `php  artisan make:controller`. fill your resource (you can use CategoriesController with some changes) or, if you are a lazy developer like me, use a [snippet](https://github.com/kossa/st-snippets/blob/master/kossa_php/Laravel/lcontroller.sublime-snippet) and make only 2 changes
-* Duplicate `resource/views/admin/categories` folder to `posts`, make changes in `index.php`, `create.blade.php`, `edit.blade.php`
+#### Do you have question ?
+Not hesitate, [open](https://github.com/kossa/laralte2/issues/new) new issue ;)
