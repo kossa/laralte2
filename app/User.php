@@ -72,7 +72,7 @@ class User extends Authenticatable
     }
     public function setAvatarAttribute($photo)
     {
-        $this->attributes['avatar'] = Helpers::MoveImg($photo, 'avatar.image')->basename;
+        $this->attributes['avatar'] = move_file($photo, 'avatar.image');
     }
 
     /*

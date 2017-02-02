@@ -1,18 +1,9 @@
 <?php 
 
-namespace App\Helpers;
-
 use Image;
 
-class Helpers  
-{
-    
-    /*
-    |------------------------------------------------------------------------------------
-    | Move Image
-    |------------------------------------------------------------------------------------
-    */
-    public static function MoveImg($file, $type='products.slide', $withWatermark = false)
+if (! function_exists('move_file')) {
+    function move_file($file, $type='products.slide', $withWatermark = false)
     {
         // Grab all variables
         $path = explode('.', $type)[0];      
@@ -38,7 +29,6 @@ class Helpers
             $image->insert($watermark, 'center');
         }
 
-        return $image->save($destinationPath . '/' . $full_name);
+        return $image->save($destinationPath . '/' . $full_name)->basename;
     }
-    
 }
