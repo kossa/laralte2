@@ -23,6 +23,7 @@ mix.combine([
     'node_modules/chosen-js/chosen.css',
     'node_modules/datatables-all/media/css/dataTables.bootstrap.min.css',
     'node_modules/admin-lte/dist/css/AdminLTE.min.css',
+    // 'node_modules/bootstrap-rtl/dist/css/bootstrap-rtl.min.css',
     'node_modules/icheck/skins/square/blue.css',
     'node_modules/admin-lte/dist/css/skins/_all-skins.min.css'
     ], 'public/css/admin-vendor.css');

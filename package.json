@@ -28,5 +28,9 @@
     "jquery-datetimepicker": "^2.5.4",
     "sweetalert2": "^6.3.2",
     "vue-resource": "^1.0.3"
+  },
+  "rtl-dependencies": {
+    "admin-lte": "mmdsharifi/AdminLTE-RTL",
+    "bootstrap-rtl": "^3.3.4"
   }
 }
