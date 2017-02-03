@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-  User <small>nouveau</small>
+  User <small>new</small>
 @stop
 
 @section('content')

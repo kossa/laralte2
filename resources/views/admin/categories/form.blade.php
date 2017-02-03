@@ -1,4 +1,4 @@
-<?php $title = isset($item) ? $item->name: "Creer une categorie" ?>
+<?php $title = isset($item) ? $item->name: "add new category" ?>
 
 <div class="row">
   <div class="col-sm-8">

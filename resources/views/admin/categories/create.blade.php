@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-  Categorie <small>nouveau</small>
+  Categorie <small>new</small>
 @stop
 
 @section('content')
