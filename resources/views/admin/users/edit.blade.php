@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-  User <small>modification</small>
+  User <small>update</small>
 @stop
 
 @section('content')

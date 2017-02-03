@@ -1,7 +1,7 @@
 @extends('admin.default')
 
 @section('page-header')
-  Categorie <small>modification</small>
+  Categorie <small>update</small>
 @stop
 
 @section('content')
