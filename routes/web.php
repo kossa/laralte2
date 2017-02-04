@@ -1,6 +1,8 @@
 <?php
 
-define('ADMIN', env('APP_ADMIN', 'admin'));
+if (!defined('ADMIN')) {
+   define('ADMIN', env('APP_ADMIN', 'admin'));
+}
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
