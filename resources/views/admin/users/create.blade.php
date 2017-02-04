@@ -15,7 +15,7 @@
     @include('admin.users.form')
 
   	<div class="box-footer">
-  	  <button type="submit" class="btn btn-info">Enregistrer</button>
+  	  <button type="submit" class="btn btn-info">Save</button>
   	</div>
 
   {!! Form::close() !!}

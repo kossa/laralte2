@@ -8,7 +8,7 @@
       </div>
       <div class="box-body">
 
-        {!! Form::myInput('text', 'name', 'Titre', ['required']) !!}
+        {!! Form::myInput('text', 'name', 'Title', ['required']) !!}
 
         {!! Form::mySelect('parent_id', 'Parent category', [0 => 'root'] + App\Category::pluck('name', 'id')->toArray(), null, ['class'=>'chosen']) !!}
 
