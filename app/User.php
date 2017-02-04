@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\Helpers\Helpers;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Validation\Rule;
