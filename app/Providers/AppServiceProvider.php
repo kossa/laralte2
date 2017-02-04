@@ -14,6 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (!defined('ADMIN')) {
+           define('ADMIN', env('APP_ADMIN', 'admin'));
+        }
         Schema::defaultStringLength(191);
     }
 
