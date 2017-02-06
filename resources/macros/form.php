@@ -39,7 +39,7 @@ Form::macro('myTextArea', function($name, $label="", $options=[], $default = nul
     return "
         <div class='form-group'>
             ". $label . 
-              Form::textarea($name, $default, array_merge(["class" => "form-control"], $options)). "
+              Form::textarea($name, $default, array_merge(["class" => "form-control", "rows"=> 3], $options)). "
         </div>
     ";
 });
