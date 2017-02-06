@@ -8,8 +8,8 @@
     var table = $('.data-tables').DataTable({
         'aaSorting': [],
         'language': {
-            // 'url': '/assets/i18n/dataTables-french.json'
-            // 'url' : '/assets/i18n/dataTables-arabic.json'
+            // 'url': '/plugins/i18n/dataTables-french.json'
+            // 'url' : '/plugins/i18n/dataTables-arabic.json'
             // More languages : http://www.datatables.net/plug-ins/i18n/
         }
     });
