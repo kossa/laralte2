@@ -6,6 +6,11 @@ return [
         '0' => 'No',
         '1' => 'Yes',
     ],
+
+    'role' => [
+        '0' => 'User',
+        '10' => 'Admin',
+    ],
     
     'status' => [
         '1' => 'Active',
