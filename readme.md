@@ -14,11 +14,11 @@ All you need is to run these commands:
 git clone https://github.com/kossa/laralte2.git
 cd laralte2 
 composer install                   # Install backend dependencies
-yarn install                       # Install node dependencies
+sudo chmod 777 storage/ -R         # Chmod Storage
 cp .env.example .env               # Update database credentials configuration
 php artisan key:generate           # Generate new keys for Laravel
 php artisan migrate:refresh --seed # Run migration and seed users and categories for testing
-sudo chmod 777 storage/ -R         # Chmod Storage
+yarn install                       # Install node dependencies
 npm run production                 # To compile assets for prod
 ```
 
