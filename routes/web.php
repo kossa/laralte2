@@ -18,7 +18,3 @@ Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>'auth'], fun
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('test', function () {
-    return view('auth.login');
-});
