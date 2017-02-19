@@ -6,7 +6,7 @@
 	<title>{{ config('app.name') }} | Admin</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 		
-	@if (! env('APP_DEBUG', true))
+	@if (! config('app.debug', true))
 		<link rel="stylesheet" href="/css/admin-all.css">
 	@else
 		<!-- Vendors -->

@@ -10,7 +10,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    @if (! env('APP_DEBUG', true))
+    @if (! config('app.debug', true))
     <link rel="stylesheet" href="/css/admin-all.css">
   @else
     <!-- Vendors -->

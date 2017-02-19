@@ -17,7 +17,7 @@ class ApiToken
     public function handle($request, Closure $next)
     {
         // Check token
-        if (is_null($request->header('APP-TOKEN')) || $request->header('APP-TOKEN') != env('APP_TOKEN')) {
+        if (is_null($request->header('APP-TOKEN')) || $request->header('APP-TOKEN') != config('variables.APP_TOKEN')) {
             return Restable::unauthorized()->render();
         }
 
