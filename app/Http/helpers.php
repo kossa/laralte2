@@ -10,6 +10,11 @@ if (! function_exists('move_file')) {
         $height          = config('variables.' . $type . '.height');
         $full_name       = str_random(16) . '.' . $file->getClientOriginalExtension();
         
+        if ($width == null && $height == null) { // Just move the file
+            $file->storeAs($destinationPath, $full_name);
+            return $full_name;
+        }
+
         // Create the Image
         $image           = Image::make($file->getRealPath());
 
