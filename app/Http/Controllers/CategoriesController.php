@@ -93,7 +93,7 @@ class CategoriesController extends Controller
     {
         Category::destroy($id);
 
-        return redirect()->route(ADMIN . '.categories.index')->withSuccess(trans('app.success_destroy')); 
+        return back()->withSuccess(trans('app.success_destroy')); 
     }
 }
 

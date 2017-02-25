@@ -101,7 +101,7 @@ class UsersController extends Controller
     {
         User::destroy($id);
 
-        return redirect()->route(ADMIN . '.users.index')->withSuccess(trans('app.success_destroy')); 
+        return back()->withSuccess(trans('app.success_destroy')); 
     }
 }
 
