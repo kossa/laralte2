@@ -44,7 +44,8 @@ mix.combine([
     'node_modules/sweetalert2/dist/sweetalert2.min.js',
     'node_modules/chosen-js/chosen.jquery.js',
     'node_modules/icheck/icheck.min.js',
-    'node_modules/admin-lte/dist/js/app.min.js'
+    'node_modules/admin-lte/dist/js/app.min.js',
+    // 'node_modules/turbolinks/dist/turbolinks.js',
     ], 'public/js/admin-vendor.js');
 
 // Combine Admin All CSS

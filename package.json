@@ -28,6 +28,7 @@
     "ionicons": "^3.0.0",
     "jquery-datetimepicker": "^2.5.4",
     "sweetalert2": "^6.3.2",
+    "turbolinks": "^5.0.0",
     "vue-resource": "^1.0.3"
   },
   "rtl-dependencies": {

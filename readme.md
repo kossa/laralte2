@@ -68,6 +68,7 @@ LaraLTE2 uses :
 * [iCheck](https://github.com/fronteed/iCheck)
 * [Axios](https://github.com/mzabriskie/axios)
 * [VueJs](http://vuejs.org/)
+* [Turbolinks](https://github.com/turbolinks/turbolinks)
 
 
 ## Page size optimization:
