@@ -60,6 +60,7 @@
                                             <button class="btn btn-danger btn-xs" title="{{ trans('app.delete_title') }}"><i class="fa fa-trash"></i></button>
                                             
                                         {!! Form::close() !!}
+                                    </li>
                                 </ul>
                             </td>
 						</tr>
