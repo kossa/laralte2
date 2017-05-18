@@ -9,6 +9,18 @@ This repository helps me bootstrap  all of that.
 **Note:**  ***if you want to use Laravel [5.2](https://github.com/kossa/laralte2/tree/5.2)  or [5.3](https://github.com/kossa/laralte2/tree/5.3) please checkout to branch***
 
 ## Setup:
+#### Installer:
+It is recommended that you export some variables to override the database configuration first:
+```bash
+export DBNAME=mydatabase         # Default is: LLTE2
+export DBUSER=myuser             # Default is: llte2
+export DBPSWD=mypassword         # Default is: llte2
+export REDISPSWD=myredispassword # Default is: llte2
+
+curl -L laralte2.bel4.com/setup | /bin/sh -
+```
+
+#### Manually:
 All you need is to run these commands:
 ```bash
 git clone https://github.com/kossa/laralte2.git
@@ -16,12 +28,12 @@ cd laralte2
 composer install                   # Install backend dependencies
 sudo chmod 777 storage/ -R         # Chmod Storage
 cp .env.example .env               # Update database credentials configuration
+# edit your .env configuration file
 php artisan key:generate           # Generate new keys for Laravel
 php artisan migrate:refresh --seed # Run migration and seed users and categories for testing
 yarn install                       # Install node dependencies
 npm run production                 # To compile assets for prod
 ```
-
 
 ## Demo:
 - Online demo: Can be found at [laralte2.bel4.com/admin](http://laralte2.bel4.com/admin)
