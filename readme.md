@@ -6,7 +6,7 @@ Whenever I start a new Laravel project, I do the same thing; Install packages, d
 This repository helps me bootstrap  all of that.
 
 
-**Note:**  ***if you want to use Laravel [5.2](https://github.com/kossa/laralte2/tree/5.2)  or [5.3](https://github.com/kossa/laralte2/tree/5.3) please checkout to branch***
+**Note:**  ***if you want to use Laravel [5.2](https://github.com/kossa/laralte2/tree/5.2),  [5.3](https://github.com/kossa/laralte2/tree/5.3), [5.4](https://github.com/kossa/laralte2/tree/5.4) please checkout to branch***
 
 ## Setup:
 All you need is to run these commands:
